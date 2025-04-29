@@ -1,0 +1,11 @@
+curl -X POST http://localhost:8001/api \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{"email":"aziz@shariacoin.com","password":"aziz123"}'
+
+curl -X POST http://localhost:8001/api/validate \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{"access_token":"your-jwt-token","token_type":"Bearer"}'
+
+jwt:public-key
