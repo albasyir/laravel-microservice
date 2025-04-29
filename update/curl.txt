@@ -1,0 +1,10 @@
+curl -X POST http://localhost:8002/api/identities \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0Iiwic3ViIjoxLCJpYXQiOjE3NDU5MjQ0MzYsImV4cCI6MTc0NTkyODAzNiwidXNlciI6eyJpZCI6MSwiZW1haWwiOiJheml6QHNoYXJpYWNvaW4uY29tIn19.PPmSRbgO-NYEWPERLAYVGH6QGbKa0POlzypq59JHVSeRVLP2eqlSrjyDMY7IRm6Ym0-5mR7KZgJ7WA0VLnJtXysh168i8Ipd3dTysSPb4ZyC7BVotBqgNPc58VoLHPHgm1Up_oOw25aAHM4VkaBSxaiGvvQYofFGwWnMTnm72SsBmIM_X0TeQ6MLcPSrpmaZdznO_tkYxIaeJQiqS4zccvOmo_Xyr_FpEgEKXGhVdWNb5q9q30esrqr36JWLkUOstjqxggEWLBUwlPTlO4oa1oOKAv2ymuUxl_483QyzqBnxA68KVbwLMQujmMMmfJlZCv5Mtu7UKdnunEIjFuBqRgfs1zGpqrmZe6esCJcrnELnEYPx-geF-UqCm5QiybVzDqN3vnzTid1InosXZFvz7Y3cGt9kJ8K2yjJc8moKKDkvVahrWjoXCEUU3iB5hpOoser4Wp3Qas8x33w33SVLKqKNt_v5mOYxTjxnGpWYoEMfBgh3BlxMRUtcdpRDn3jN1jImy8Nn-o-68BBUyLAR6Vt0zRtmvO1itJo_is8Wq-psq-8nx98x7nNY25ki3dL7-YElOO9rY6H4Cym20UiXjr05ETXp8_hv8cwqT3U1LO4Xlg_9fEPiyTRExJLfN1s3pS3Sxo_7sl9XQYKyWffuHlcso94ejD0lgT-KosqjvV4" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{
+    "profile_id": 123,
+    "identity_id": "1234567890123456",
+    "identity_photo": "base64-image-data",
+    "address": "Jl. Contoh No.1"
+  }'
